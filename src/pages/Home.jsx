@@ -2,6 +2,10 @@ import React, { useContext } from 'react'
 import { NewsContext } from '../MainLayout'
 import NewsCard from './component/NewsCard'
 import LoadingCompo from './component/LoadingCompo'
+import { FaAnglesRight } from "react-icons/fa6";
+import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
+
+
 
 export default function Home() {
 
@@ -99,7 +103,8 @@ export default function Home() {
                     }}
                     disabled={prevPages.length === 0}
                 >
-                    ⬅️ Previous
+                    <MdOutlineKeyboardDoubleArrowLeft />
+                    Previous
                 </button>
 
                 <button
@@ -110,7 +115,8 @@ export default function Home() {
                     }}
                     disabled={!nextPageToken}
                 >
-                    Next ➡️
+                    Next
+                    <FaAnglesRight />
                 </button>
 
             </div>
