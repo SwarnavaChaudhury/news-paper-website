@@ -32,7 +32,7 @@ export default function MainLayout() {
             }
         })
             .then((res) => {
-                console.log(res.data)
+                // console.log(res.data)
                 // console.log(res.data.results);
                 setNewsArr(res.data.results || []);
                 setTotalRes(res.data.totalResults || 0);

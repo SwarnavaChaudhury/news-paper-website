@@ -94,7 +94,7 @@ export default function Home() {
             <div className='w-full flex justify-center gap-5 my-10'>
 
                 <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50"
+                    className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50 flex gap-3 justify-center items-center"
                     onClick={() => {
                         const prev = [...prevPages];
                         const lastPage = prev.pop();
@@ -108,7 +108,7 @@ export default function Home() {
                 </button>
 
                 <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50"
+                    className="bg-blue-500 text-white px-4 py-2 rounded disabled:opacity-50 flex gap-3 justify-center items-center"
                     onClick={() => {
                         setPrevPages(prev => [...prev, nextPageToken]);
                         newsDtls(nextPageToken);
